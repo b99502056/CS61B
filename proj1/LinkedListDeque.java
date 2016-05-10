@@ -2,14 +2,14 @@ public class LinkedListDeque<Item> {
 
 	/* Create Node class as the building block. */
 	public class Node {
-		public Node prevNode; 
+		public Node prev; 
 		public Item item;
-		public Node nextNode;
+		public Node next;
 
 		public Node(Node p, Item i, Node n) {
-			prevNode = p;
+			prev = p;
 			item = i;
-			nextNode = n;
+			next = n;
 		}
 	}
 
