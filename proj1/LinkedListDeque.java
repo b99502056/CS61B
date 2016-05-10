@@ -76,7 +76,7 @@ public class LinkedListDeque<Item> {
 		Node currentNode = sentinel.next;
 		/* If the deque is empty, let the user know. */
 		if (size == 0) {
-			println("The deque is empty.");
+			System.out.println("The deque is empty.");
 			return;
 		}
 
@@ -137,7 +137,7 @@ public class LinkedListDeque<Item> {
 			/* Iterate until hit the item at given index. */
 			Node currentNode = sentinel;
 			for (int i = 0; i < index; i++) {
-				currentNode = curentNode.next;
+				currentNode = currentNode.next;
 			}
 			return currentNode.item;
 		}
